@@ -22,22 +22,22 @@ Example:
     poisson_disk_sample(left_hemisphere, right_hemisphere, num_regions, wmm=None, output_filename='pds_results.pickle', create_niftii=True, output_basename='randomLabels-')
 
 Input:
-    - left_hemisphere (grey matter mask of left hemisphere)
-    - right_hemisphere (grey matter mask of right hemisphere)
-    - num_regions (total number of regions to parcellate brain into)
-    - wmm (optional - white matter mask, used for skeletonising grey matter)
-    - output_filename (optional - file name to which the results will be saved, needs to end with pickle)
-    - create_niftii (optional - flag to turn on/off the output of nii.gz parcellation files)
+    - left_hemisphere (grey matter mask of left hemisphere)  
+    - right_hemisphere (grey matter mask of right hemisphere)  
+    - num_regions (total number of regions to parcellate brain into)  
+    - wmm (optional - white matter mask, used for skeletonising grey matter)  
+    - output_filename (optional - file name to which the results will be saved, needs to end with pickle)  
+    - create_niftii (optional - flag to turn on/off the output of nii.gz parcellation files)  
     - output_basename (optional - if create_niftii==True, then use this as filename base for random parcellation)
 
 Output:
     - files:
-        - spatial neighbourhood graph of voxels
-        - random parcellation
-        - optional: skeletonised grey matter mask, if white matter mask was given
-        - left hemisphere parcellation (if create_niftii=True)
-        - right hemisphere parcellation (if create_niftii=True)
-        - random parcellation file (if create_niftii=True)
+        - spatial neighbourhood graph of voxels  
+        - random parcellation  
+        - optional: skeletonised grey matter mask, if white matter mask was given  
+        - left hemisphere parcellation (if create_niftii=True)  
+        - right hemisphere parcellation (if create_niftii=True)  
+        - random parcellation file (if create_niftii=True)  
 
 ###############
 # GRAPHTOOL
