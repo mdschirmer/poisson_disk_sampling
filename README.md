@@ -51,7 +51,6 @@ make install
 
 Graph-tools relies on a variety of libraries. These are the libraries I had to install on Ubuntu 16.04, in order for the configuration to proceed without errors. (no guarantee of completeness; date: 2016-05-02)
 
-============
 sudo apt install libboost-all-dev
 pip install scipy
 sudo apt install libcgal-dev
@@ -59,4 +58,3 @@ sudo apt install libcairo2-dev
 pip install matplotlib
 sudo apt install python-cairo-dev
 sudo apt install libsparsehash-dev
-============
