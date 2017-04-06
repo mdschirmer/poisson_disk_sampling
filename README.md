@@ -17,7 +17,9 @@ Requirements which cannot be satisfied by the setup script is graph-tool (see be
 ###############
 # Usage
 ###############
-Example:
+A sample script can be found here: tests/main_test.py
+
+In-python example:
     
     poisson_disk_sample(left_hemisphere, right_hemisphere, num_regions, wmm=None, output_filename='pds_results.pickle', create_niftii=True, output_basename='randomLabels-')
 
