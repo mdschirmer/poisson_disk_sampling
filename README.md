@@ -17,6 +17,7 @@ Requirements which cannot be satisfied by the setup script is graph-tool (see be
 ###############
 # Usage
 ###############
+
 A sample script can be found here: tests/main_test.py
 
 In-python example:
