@@ -12,5 +12,6 @@ setup(name='PDS',
       author_email='software@markus-schirmer.com',
       license='MIT',
       packages=['PDS'],
+      setup_requires=['numpy'],
       install_requires=reqs,
       zip_safe=False)
