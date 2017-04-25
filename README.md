@@ -4,6 +4,10 @@
 
 This is a software package which provides Poisson Disk Sampling. For details see 'docs'.
 
+If you find the software useful and used it in one of your publications, please cite the following:
+
+Schirmer, M.D., 2015. Developing brain connectivity: effects of parcellation scale on network analysis in neonates (Doctoral dissertation, King's College London).
+
 ###############
 # Install
 ###############
