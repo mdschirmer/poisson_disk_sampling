@@ -14,7 +14,8 @@ Schirmer, M.D., 2015. Developing brain connectivity: effects of parcellation sca
 
 Use:
 
-python setup.py install
+python3 setup.py sdist bdist_wheel
+python -m pip install dist/pds-0.1-py3-none-any.whl 
 
 Requirements which cannot be satisfied by the setup script is graph-tool (see below).
 
