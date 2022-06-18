@@ -54,7 +54,7 @@ import graph_tool as gt
 import graph_tool.topology as gtt
 import pickle
 import sys
-import misc
+from . import misc
 
 #===============================================================================
 # Main method to poisson disk sample a brain

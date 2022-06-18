@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Timestamp: 2015-06
+Timestamp: 2022-06
 @author: MDS
 
 Test file for poisson disk sampling
@@ -16,8 +16,8 @@ import sys
 import datetime
 
 project_dir = os.path.dirname(os.path.abspath(sys.path[0]))
-sys.path.append(os.path.join(project_dir, 'PDS'))
-import poisson_disk_sampling as pds
+sys.path.append(project_dir)
+import pds
 
 # filenames
 subject = 'testfile'
@@ -26,7 +26,9 @@ right_hemisphere = subject + '_rightcortex.nii.gz'
 wmm = subject + '_wmm.nii.gz'
 
 # create test files (surrogate, based on sphere)
-execfile('mk_test_files.py')
+with open('tests/mk_test_files.py', "r") as source_file:
+    code = compile(source_file.read(), 'mk_test_files.py', "exec")
+exec(code)
 
 # how many regions
 num_regions = [100]

@@ -34,6 +34,8 @@ import graph_tool as gt
 import graph_tool.centrality as gtc
 import graph_tool.clustering as gtclust
 
+import pdb
+
 #===============================================================================
 # Helper functions
 #===============================================================================
@@ -209,9 +211,9 @@ def dilute_mask(mask, siz=5):
         z = all_mask_voxels[2][each_coord] + np.arange(-(siz-1)/2,(siz-1)/2+1)
 
         # assure position is within image
-        x = x[((x>=0) & (x<mask.shape[0]))]
-        y = y[((y>=0) & (y<mask.shape[1]))]
-        z = z[((z>=0) & (z<mask.shape[2]))]
+        x = x[((x>=0) & (x<mask.shape[0]))].astype(int)
+        y = y[((y>=0) & (y<mask.shape[1]))].astype(int)
+        z = z[((z>=0) & (z<mask.shape[2]))].astype(int)
         
         mask[x[0]:x[-1], y[0]:y[-1], z[0]:z[-1]] = 1
 
