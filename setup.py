@@ -10,7 +10,7 @@ setuptools.setup(
     description='Poisson disk sampling approach for brain parcellations.',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/mdschirmer/mds',
+    url='https://github.com/mdschirmer/poisson_disk_sampling',
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
